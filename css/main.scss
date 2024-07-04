@@ -58,6 +58,9 @@ header {
   height: 100vh;
   color: $theme-green;
   min-height: 1000px;
+  img {
+    max-width: 500px;
+  }
 }
 
 .header-content-inner {
@@ -69,9 +72,7 @@ header {
   align-items: end;
   flex-direction: row-reverse;
   flex-wrap: wrap;
-  img {
-    max-width: 300px;
-  }
+
   h1 {
     text-align: right;
   }
@@ -149,6 +150,10 @@ section .row {
   display: inline;
   width: 20px;
   margin-right: 5px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: $theme-white;
 }
 
 .navbar-right {
@@ -260,57 +265,59 @@ section .row {
 @media (max-width: 1200px) {
 
   header {
+    img {
+      max-width: 300px;
+    }
     .header-content-inner {
       // margin-top: 50px;
-      img {
-        max-width: 200px;
-      }
+
       h1 {
         padding-top: 30px;
       }
     }
   }
     
-    #relstructure {
-      height: 600px;  
-    }
+  #relstructure {
+    height: 600px;  
+  }
 
-    #relprediction {
-      height: 810px;
-    }
+  #relprediction {
+    height: 810px;
+  }
 
-    #research-header {
-      height: 30vh;
-    }
+  #research-header {
+    height: 30vh;
+  }
 
-    #story {
+  #story {
+    img {
+      max-width: 250px;
+      margin-bottom: 40px;
+    }
+  }
+
+  #book {
+    img {
+      max-width: 200px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .navbar-brand {
+      font-size: 14px;
       img {
-        max-width: 250px;
-        margin-bottom: 40px;
+        display: none;
       }
-    }
+  }
 
-    #book {
-      img {
-        max-width: 200px;
-        margin-bottom: 40px;
-      }
-    }
+  .navbar-default .navbar-header .navbar-brand {
+    color: #fff;
+  }
 
-    .navbar-brand {
-        font-size: 14px;
-        img {
-          display: none;
-        }
-    }
+  .section-heading {
+    margin-top: 30px;
+  }
 
-    .navbar-default .navbar-header .navbar-brand {
-      color: #fff;
-    }
-
-    .section-heading {
-      margin-top: 30px;
-    }
 }
 
 hr.primary {
@@ -408,6 +415,9 @@ hr.primary {
 
 .author-photo {
   max-width: 500px;
+  @media(max-width: 1200px) {
+    max-width: 300px;
+  }
 }
 
 .fig-text {
