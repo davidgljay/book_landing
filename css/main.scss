@@ -108,7 +108,7 @@ body {
 
 #mainNav {
 
-  background-color: rgba($theme-primary, .9)
+  background-color: rgba($theme-white, .9)
 }
 
 #research-header {
@@ -161,15 +161,15 @@ section .row {
 }
 
 .navbar-default.affix .navbar-header .navbar-brand{
-  color: #fff;
+  color: $theme-primary;
 }
 
 .navbar-default.affix .nav > li > a {
-  color: #fff;
+  color: $theme-primary;
 }
 
 .navbar-default .nav > li > a {
-  color: #fff;
+  color: $theme-primary;
 }
 
 .navbar-default .nav > li > a:hover {
