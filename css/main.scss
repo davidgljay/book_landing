@@ -101,11 +101,12 @@ body, h1, h2, h3, h4, h5, h6 {
 
 body {
   font-weight: 400;
+  font-size: 20px;
 }
 
 #mainNav {
 
-  background-color: rgba($theme-green, .9)
+  background-color: rgba($theme-primary, .9)
 }
 
 #research-header {
@@ -127,6 +128,7 @@ body {
 p {
   color: lighten($text-color, 40%);
   font-weight: 300;
+  font-size: 20px;
 }
 
 li {
@@ -395,9 +397,18 @@ hr.primary {
   }
 }
 
+.author-photo {
+  max-width: 500px;
+}
+
 .fig-text {
   font-weight: 200;
   font-size: 14px;
+}
+
+.attribution-text {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .circle-crop {
