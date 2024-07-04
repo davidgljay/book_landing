@@ -42,6 +42,7 @@ $theme-light: rgb(80, 208, 227);
 $theme-green: rgb(23, 60, 66);
 $theme-blue: #247ba0;
 $theme-purple: #390040;
+$theme-white: #fff;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -56,7 +57,7 @@ header {
   background-image: none;
   height: 100vh;
   color: $theme-green;
-  min-height: 70%;
+  min-height: 1000px;
 }
 
 .header-content-inner {
@@ -181,6 +182,14 @@ section .row {
 .btn-primary {
   background-color: $theme-primary;
   border-color: $theme-primary;
+  margin: 10px;
+  padding: 20px;
+}
+
+.btn-white {
+  background-color: $theme-white;
+  border-color: $theme-white;
+  color: $theme-primary;
   margin: 10px;
   padding: 20px;
 }
