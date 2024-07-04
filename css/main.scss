@@ -34,11 +34,12 @@ $grey-color-dark:  darken($grey-color, 25%);
 //     }
 // }
 
+
 // variables.less
-$theme-primary: rgb(31, 55, 10);
-$theme-dark: rgb(31, 55, 10);
-$theme-light: #708c57;
-$theme-green: rgb(31, 55, 10);
+$theme-primary: rgb(50,	129,	141);
+$theme-dark:  rgb(23, 60, 66);
+$theme-light: rgb(80, 208, 227);
+$theme-green: rgb(23, 60, 66);
 $theme-blue: #247ba0;
 $theme-purple: #390040;
 
@@ -173,6 +174,13 @@ section .row {
 
 .navbar-default .nav > li > a.active {
   color: $theme-light;
+}
+
+.btn-primary {
+  background-color: $theme-primary;
+  border-color: $theme-primary;
+  margin: 10px;
+  padding: 20px;
 }
 
 .dropdown-container {
