@@ -39,7 +39,7 @@ $grey-color-dark:  darken($grey-color, 25%);
 $theme-primary: rgb(50,	129,	141);
 $theme-dark:  rgb(23, 60, 66);
 $theme-light: rgb(80, 208, 227);
-$theme-green: rgb(23, 60, 66);
+$theme-green: rgb(147,178,116	);
 $theme-blue: #247ba0;
 $theme-purple: #390040;
 $theme-white: #fff;
@@ -82,6 +82,9 @@ header .header-content .header-content-inner h1 {
   text-transform: none;
 }
 
+a {
+  color: $theme-green;
+}
 
 h1 {
   font-size: 40px;
@@ -104,6 +107,11 @@ body, h1, h2, h3, h4, h5, h6 {
 body {
   font-weight: 400;
   font-size: 20px;
+}
+
+input {
+  margin-bottom: 10px;
+
 }
 
 #mainNav {
@@ -152,8 +160,12 @@ section .row {
   margin-right: 5px;
 }
 
+.navbar-default .navbar-toggle {
+    border-color: $theme-primary;
+}
+
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: $theme-white;
+    background-color: $theme-primary;
 }
 
 .navbar-right {
@@ -187,6 +199,14 @@ section .row {
 .btn-primary {
   background-color: $theme-primary;
   border-color: $theme-primary;
+  margin: 10px;
+  padding: 20px;
+}
+
+.btn-green {
+  background-color: $theme-green;
+  border-color: $theme-green;
+  color: $theme-white;
   margin: 10px;
   padding: 20px;
 }
