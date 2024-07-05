@@ -9,26 +9,13 @@
     $('#contactForm').submit(function(e){
         e.preventDefault();
         $.ajax({
-            url: 'https://hooks.zapier.com/hooks/catch/14500435/36xu44q/',
+            url: 'https://hook.us1.make.com/hoxxkds733b1orwxowtdwuxg6m3gy4lo',
             type: 'post',
-            data:$('#contactForm').serialize(),
+            data:$('#organizingForm').serialize(),
             success:function(){
-                $('#contactArea').hide()
-                $('#contactThanks').show()
+                $('#organizingArea').hide()
+                $('#organizingThanks').show()
                 console.log('success')
-            }
-        });
-    });
-
-    $('#newsletterForm').submit(function(e){
-        e.preventDefault();
-        $.ajax({
-            url: 'https://hooks.zapier.com/hooks/catch/14500435/36ehu98/',
-            type: 'post',
-            data:$('#newsletterForm').serialize(),
-            success:function(){
-                $('#newsletterForm').hide()
-                $('#newsletterThanks').show()
             }
         });
     });
