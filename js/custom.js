@@ -8,14 +8,18 @@
 
     $('#organizingForm').submit(function(e){
         e.preventDefault();
+        const body = {
+            form: $('#organizingForm').serializeArray().reduce((obj, item) => { obj[item.name] = item.value; return obj; }, {}),  
+            subject: "New Submission on Relationality Book Site"
+        }
         $.ajax({
-            url: 'https://hook.us1.make.com/fq8rntt8lxkg80m6omalzlcwmu6o1bpo',
+            url: 'https://faas-nyc1-2ef2e6cc.doserverless.co/api/v1/web/fn-8e8c4968-55c0-47b4-a2c2-0a18affc3f51/emailer/send',
             type: 'post',
-            data:$('#organizingForm').serialize(),
+            contentType:'application/json',
+            data:JSON.stringify(body),
             success:function(){
                 $('#organizingArea').hide()
                 $('#organizingThanks').show()
-                console.log('success')
             }
         });
     });
